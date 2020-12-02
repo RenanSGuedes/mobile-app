@@ -3,8 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Pointer from './src/assets/svg_components/Pointer'
-import BackgroundPointer from './src/assets/svg_components/BackgroundPointer'
-import XBackgroundPointer from './src/assets/svg_components/XBackgroundPointer'
+import PointerBackground from './src/assets/svg_components/PointerBackground'
+import XPointerBackground from './src/assets/svg_components/XPointerBackground'
 import BottomBar from './src/assets/Components/BottomBar'
 
 export default function App() {

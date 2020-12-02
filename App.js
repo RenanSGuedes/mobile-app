@@ -5,14 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import Pointer from './src/assets/svg_components/Pointer'
 import PointerBackground from './src/assets/svg_components/PointerBackground'
 import XPointerBackground from './src/assets/svg_components/XPointerBackground'
-import BottomBar from './src/assets/Components/BottomBar'
+import BottomBar from './src/assets/components/BottomBar'
+import Home from './src/pages/Home'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello, world!</Text>
+      <Home />
       <BottomBar />
-      <StatusBar style="auto" />
     </View>
   );
 }

@@ -4,19 +4,22 @@ import Tomato from '../../assets/icons/Tomato'
 import styles from './styles'
 import TomatoBackground from '../../assets/images/TomatoBackground.png'
 import Pump from '../../assets/icons/Pump'
+import { vw } from 'react-native-expo-viewport-units'
 
 export default function Home() {
   return (
     <View style={styles.container}>
+      
       <Image source={TomatoBackground} style={styles.tomatoBackground}/>
-      <View style={styles.infoMenu}>
-        <Tomato style={styles.tomatoIcon}/>
+      
+      <View style={styles.infoMenu}>   
+        <Tomato style={styles.tomato} width={vw(35)}/> 
         <Text style={styles.titleMenu}>Status</Text>
-        
+
         <View style={styles.block}>
           <View style={styles.layoutInRow}>
             <View style={styles.backgroundPumpIcon}>
-              <Pump />
+              <Pump width={vw(7)}/>
             </View>
             <View>
               <Text style={styles.normalText}>Bomba NFT</Text>
@@ -29,7 +32,7 @@ export default function Home() {
         <View style={styles.block}>
           <View style={styles.layoutInRow}>
             <View style={styles.backgroundPumpIcon}>
-              <Pump />
+              <Pump width={vw(7)}/>
             </View>
             <View>
               <Text style={styles.normalText}>Bomba | Substrato - Aberto</Text>
@@ -40,9 +43,10 @@ export default function Home() {
         </View>
 
         <View style={styles.block}>
+
           <View style={styles.layoutInRow}>
             <View style={styles.backgroundPumpIcon}>
-              <Pump />
+              <Pump width={vw(7)}/>
             </View>
             <View>
               <Text style={styles.normalText}>Bomba | Substrato - Fechado</Text>
@@ -51,8 +55,8 @@ export default function Home() {
           </View>
           <View style={styles.pumpStatusIndicator}/>
         </View>
-
       </View>
+
       <View style={styles.buttonsContainer}>
         <TouchableOpacity style={styles.touchable}>
           <Text style={styles.text}>1</Text>

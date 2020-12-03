@@ -1,90 +1,91 @@
 import { StyleSheet } from 'react-native'
+import { vw } from 'react-native-expo-viewport-units'
+import Constants from 'expo-constants'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
-  },
-  buttonsContainer: {
-    width: '100%',
-    height: 100,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-    backgroundColor: '#F0F0F0',
-    position: 'absolute',
-    bottom: 0
+    flex: 1,
+    width: vw(100)
   },
   tomatoBackground: {
-    flex: 1,
+    flex: 2,
     opacity: .5
   },
-  tomatoIcon: {
-    position: "relative",
-    top: -135/2,
-    alignSelf: 'center'
+  tomato: {
+    marginTop: -vw(20),
+    alignSelf: 'center',
   },
   infoMenu: {
-    flex: 2,
+    flex: 5,
     backgroundColor: '#F7F7F7',
-    padding: 20
+    padding: vw(5)
   },
-  backgroundPumpIcon: {
-    backgroundColor: '#DAEBFF',
-    width: 45,
-    height: 45,
+  block: {
+    marginBottom: vw(4),
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
-    borderRadius: 45/2,
-    marginRight: 6
+    justifyContent: 'space-between'
   },
   titleMenu: {
     color: '#47566A',
-    fontSize: 20,
-    paddingBottom: 35
+    fontSize: vw(4.6),
+    paddingBottom: vw(8)
+  },
+  backgroundPumpIcon: {
+    backgroundColor: '#DAEBFF',
+    padding: vw(2),
+    borderRadius: vw(11/2),
+    marginRight: vw(2)
+  },
+  layoutInRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  NFTpumpStatusIndicator: {
+    width: vw(14),
+    height: vw(7),
+    backgroundColor: '#FAA8A2',
+    borderRadius: vw(7/2)
+  },
+  pumpStatusIndicator: {
+    width: vw(14),
+    height: vw(7),
+    backgroundColor: '#DAEBFF',
+    borderRadius: vw(7/2)
+  },
+  buttonsContainer: {
+    flex: 1,
+    backgroundColor: 'red'
   },
   normalText: {
-    fontSize: 17,
+    fontSize: vw(3.6),
     color: '#47566A'
   },
   thinText: {
     fontWeight: 'normal',
-    fontSize: 13,
+    fontSize: vw(3.2),
     color: '#47566A'
   },
-  layoutInRow: {
+  buttonsContainer: {
+    flex: 1,
+    backgroundColor: 'magenta',
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    backgroundColor: '#F0F0F0',
   },
   touchable: {
-    width: 75,
-    height: 75,
-    borderRadius: 75/2,
+    width: vw(15),
+    height: vw(15),
+    borderRadius: vw(15)/2,
     alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '#DAEBFF'
   },
-  block: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 25
-  },
-  pumpStatusIndicator: {
-    width: 80,
-    height: 35,
-    backgroundColor: '#DAEBFF',
-    borderRadius: 20
-  },
-  NFTpumpStatusIndicator: {
-    width: 80,
-    height: 35,
-    backgroundColor: '#FAA8A2',
-    borderRadius: 20
-  },
   text: {
-    fontSize: 36,
+    fontSize: vw(8),
     color: '#47566A',
-  }
+  },
 })
 
 export default styles

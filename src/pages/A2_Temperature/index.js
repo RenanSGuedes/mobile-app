@@ -16,14 +16,21 @@ export default function A2_Temperature() {
       <Text style={styles.boldText}>Substrato - Fechado</Text>
       <Text style={styles.normalText}>Temperatura da solução</Text>
     </View>
+
     <View style={styles.container}>
+      
       <View style={styles.pointerContainer}>
-        <PointerBackground />
-        <View style={{
-          transform: [{ rotateZ: `${35}deg` }]
-        }}>
-          <Pointer />  
-        </View> 
+        <View style={styles.supportBlock}>
+        
+          <View style={styles.pointerBackground}>
+            <PointerBackground />
+          </View>
+          <Text style={styles.valueText}>Random text here!</Text>
+          <View style={styles.pointer}>
+            <Pointer />
+          </View>
+        
+        </View>
       </View>
       
       <View style={styles.parametersButtons}>

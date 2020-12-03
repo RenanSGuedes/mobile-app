@@ -21,9 +21,39 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   pointerContainer: {
+
     alignItems: 'center',
     justifyContent: 'space-evenly',
     height: 1
+  },
+  pointerBackground: {
+    position: 'relative',
+    backgroundColor: 'green',
+    alignItems: 'center',
+    justifyContent: 'space-around'
+  },
+  pointer: {
+    position: 'absolute',
+    left: 53,
+    bottom: -122,
+    borderRadius: 122,
+    shadowRadius: 50,
+    transform: [{ rotateZ: `${Math.floor(Math.random() * 100)}deg` }],
+
+    shadowColor: "#000",
+    shadowOffset: {
+    width: 0,
+    height: 4,
+    },
+    shadowOpacity: 0.30,
+    shadowRadius: 4.65,
+
+    elevation: 8,
+  },
+  valueText: {
+    position: "absolute",
+    fontSize: 30,
+    zIndex: 2
   },
   buttonsContainer: {
     width: '100%',

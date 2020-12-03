@@ -12,9 +12,9 @@ import Svg, {
 
 function SvgComponent(props) {
   return (
-    <Svg width={244} height={246} viewBox="0 0 244 246" fill="none" {...props}>
+    <Svg width={244} height={244} viewBox="0 0 244 244" fill="none" {...props}>
       <G filter="url(#filter0_d)">
-        <Circle cx={122} cy={120} r={120} fill="url(#paint0_radial)" />
+        <Circle cx={122} cy={122} r={122} fill="url(#paint0_radial)" />
       </G>
       <G filter="url(#filter1_i)">
         <Path

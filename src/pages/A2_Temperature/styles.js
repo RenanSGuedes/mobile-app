@@ -5,7 +5,7 @@ import Constants from 'expo-constants'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: vw(100)
+    width: '100%'
   },
   header: {
     flex: .7,
@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
   },
   boldText: {
     fontWeight: 'bold',
-    fontSize: 17,
+    fontSize: vw(3.7),
     color: '#47566A',
   },
   normalText: {
-    fontSize: 17,
+    fontSize: vw(3.6),
     color: '#47566A'
   },
   pointerContainer: {
@@ -31,8 +31,6 @@ const styles = StyleSheet.create({
   pointerBackground: {
     backgroundColor: 'yellow',
     alignItems: 'center',
-    width: vw(80),
-    height: vw(80),
   },
   parametersButtons: {
     flex: .8,

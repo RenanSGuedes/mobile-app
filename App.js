@@ -10,7 +10,7 @@ import A2_Temperature from './src/pages/A2_Temperature'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Home />
+      <A2_Temperature />
     </View>
   );
 }

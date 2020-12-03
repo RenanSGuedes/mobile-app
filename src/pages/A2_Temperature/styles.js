@@ -1,13 +1,30 @@
+import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+  header: {
+    position: "absolute",
+    top: 0,
+    marginTop: 35
+  },
+  boldText: {
+    fontWeight: 'bold',
+    fontSize: 17,
+    color: '#47566A',
+  },
+  normalText: {
+    fontSize: 17,
+    color: '#47566A'
+  },
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around'
   },
   pointerContainer: {
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    height: 5
   },
   buttonsContainer: {
     width: '100%',

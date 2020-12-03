@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+  header: {
+    paddingTop: 20
+  },
   container: {
     flex: 1
   },

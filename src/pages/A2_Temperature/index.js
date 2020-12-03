@@ -6,10 +6,19 @@ import Pointer from '../../assets/svg_components/Pointer'
 
 export default function A2_Temperature() {
   return (
+    <View>
+    <View style={styles.header}>
+      <Text style={styles.boldText}>Substrato - Fechado</Text>
+      <Text style={styles.normalText}>Temperatura da solução</Text>
+    </View>
     <View style={styles.container}>
       <View style={styles.pointerContainer}>
         <PointerBackground />
-        <Pointer />
+        <View style={{
+          transform: [{ rotateZ: '45deg'}]
+        }}>
+          <Pointer />  
+        </View> 
       </View>
       
       <View style={styles.buttonsContainer}>
@@ -23,6 +32,7 @@ export default function A2_Temperature() {
           <Text style={styles.text}>3</Text>
         </TouchableOpacity>
       </View>
+    </View>
     </View>
   )
 }

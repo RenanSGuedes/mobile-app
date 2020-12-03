@@ -1,10 +1,17 @@
 import { StyleSheet } from 'react-native'
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
+import Constants from 'expo-constants'
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: vw(100)
+  },
   header: {
-    position: "absolute",
-    top: 0,
-    marginTop: 35
+    flex: .7,
+    paddingTop: Constants.statusBarHeight + 5,
+    paddingLeft: vw(5),
+    backgroundColor: 'red'
   },
   boldText: {
     fontWeight: 'bold',
@@ -15,74 +22,42 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: '#47566A'
   },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-around'
-  },
   pointerContainer: {
-
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-    height: 1
-  },
-  pointerBackground: {
-    position: 'relative',
+    flex: 6,
     backgroundColor: 'green',
     alignItems: 'center',
     justifyContent: 'space-around'
   },
-  pointer: {
-    position: 'absolute',
-    left: 53,
-    bottom: -122,
-    borderRadius: 122,
-    shadowRadius: 50,
-    transform: [{ rotateZ: `${Math.floor(Math.random() * 100)}deg` }],
-
-    shadowColor: "#000",
-    shadowOffset: {
-    width: 0,
-    height: 4,
-    },
-    shadowOpacity: 0.30,
-    shadowRadius: 4.65,
-
-    elevation: 8,
-  },
-  valueText: {
-    position: "absolute",
-    fontSize: 30,
-    zIndex: 2
-  },
-  buttonsContainer: {
-    width: '100%',
-    height: 100,
-    flexDirection: 'row',
+  pointerBackground: {
+    backgroundColor: 'yellow',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
-    backgroundColor: '#F0F0F0',
-    position: 'absolute',
-    bottom: 0
+    width: vw(80),
+    height: vw(80),
   },
   parametersButtons: {
-    position: 'absolute',
-    bottom: 100,
-    width: '100%',
+    flex: .8,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around'
   },
+  buttonsContainer: {
+    flex: 1,
+    backgroundColor: 'magenta',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    backgroundColor: '#F0F0F0',
+  },
   touchable: {
-    width: 75,
-    height: 75,
-    borderRadius: 75/2,
+    width: vw(15),
+    height: vw(15),
+    borderRadius: vw(15)/2,
     alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '#DAEBFF'
   },
   text: {
-    fontSize: 36,
+    fontSize: vw(8),
     color: '#47566A',
   },
 })

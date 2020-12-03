@@ -8,45 +8,42 @@ import Temperature from '../../assets/icons/Temperature'
 import Flow from '../../assets/icons/Flow'
 import Humidity from '../../assets/icons/Humidity'
 import SolutionHeight from '../../assets/icons/SolutionHeight'
+import { vw } from 'react-native-expo-viewport-units'
 
 export default function A2_Temperature() {
   return (
-    <View>
-    <View style={styles.header}>
-      <Text style={styles.boldText}>Substrato - Fechado</Text>
-      <Text style={styles.normalText}>Temperatura da solução</Text>
-    </View>
-
     <View style={styles.container}>
+
+      <View style={styles.header}>
+        <Text style={styles.boldText}>Substrato - Fechado</Text>
+        <Text style={styles.normalText}>Temperatura da solução</Text>
+      </View>
       
       <View style={styles.pointerContainer}>
-        <View style={styles.supportBlock}>
-        
-          <View style={styles.pointerBackground}>
-            <PointerBackground />
-          </View>
-          <Text style={styles.valueText}>Random text here!</Text>
-          <View style={styles.pointer}>
-            <Pointer />
-          </View>
-        
+        <View style={styles.pointerBackground}>
+          <PointerBackground width={vw(80)}/>
+        {/*</View>
+        <Text style={styles.valueText}>Random text here!</Text>
+        <View style={styles.pointer}>*/}
         </View>
+        <Pointer width={vw(65)}/>
       </View>
-      
+
       <View style={styles.parametersButtons}>
         <TouchableOpacity>
-          <Temperature />
+          <Temperature width={vw(5)}/>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Flow />
+          <Flow width={vw(8)}/>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Humidity />
+          <Humidity width={vw(7)}/>
         </TouchableOpacity>
         <TouchableOpacity>
-          <SolutionHeight />
+          <SolutionHeight height={vw(9)}/>
         </TouchableOpacity>
       </View>
+
       <View style={styles.buttonsContainer}>
         <TouchableOpacity style={styles.touchable}>
           <Text style={styles.text}>1</Text>
@@ -58,7 +55,7 @@ export default function A2_Temperature() {
           <Text style={styles.text}>3</Text>
         </TouchableOpacity>
       </View>
-    </View>
+  
     </View>
   )
 }

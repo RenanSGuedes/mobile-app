@@ -1,4 +1,3 @@
-import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
@@ -23,8 +22,8 @@ const styles = StyleSheet.create({
   },
   pointerContainer: {
     alignItems: 'center',
-    justifyContent: 'space-around',
-    height: 5
+    justifyContent: 'space-evenly',
+    height: 1
   },
   buttonsContainer: {
     width: '100%',
@@ -35,6 +34,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#F0F0F0',
     position: 'absolute',
     bottom: 0
+  },
+  parametersButtons: {
+    position: 'absolute',
+    bottom: 100,
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
   touchable: {
     width: 75,

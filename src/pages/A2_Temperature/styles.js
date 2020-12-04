@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
+import { vw } from 'react-native-expo-viewport-units';
 import Constants from 'expo-constants'
 
 const styles = StyleSheet.create({
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     flex: .7,
     paddingTop: Constants.statusBarHeight + 5,
     paddingLeft: vw(5),
-    backgroundColor: 'red'
+    backgroundColor: '#F0F0F0'
   },
   boldText: {
     fontWeight: 'bold',
@@ -24,13 +24,18 @@ const styles = StyleSheet.create({
   },
   pointerContainer: {
     flex: 6,
-    backgroundColor: 'green',
+    backgroundColor: '#F0F0F0',
     alignItems: 'center',
     justifyContent: 'space-around'
   },
   pointerBackground: {
-    backgroundColor: 'yellow',
+    position: 'relative',
     alignItems: 'center',
+  },
+  pointer: {
+    position: 'absolute',
+    marginTop: 50,
+    transform: [{ rotateZ: `${45}deg` }]
   },
   parametersButtons: {
     flex: .8,

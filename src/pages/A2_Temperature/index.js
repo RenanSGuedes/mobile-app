@@ -21,12 +21,9 @@ export default function A2_Temperature() {
       
       <View style={styles.pointerContainer}>
         <View style={styles.pointerBackground}>
-          <PointerBackground width={vw(80)}/>
-        {/*</View>
-        <Text style={styles.valueText}>Random text here!</Text>
-        <View style={styles.pointer}>*/}
+          <PointerBackground width={vw(80)} />
         </View>
-        <Pointer width={vw(65)}/>
+        <Pointer style={styles.pointer} width={vw(55)}/>
       </View>
 
       <View style={styles.parametersButtons}>

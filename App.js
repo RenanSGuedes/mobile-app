@@ -1,14 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Home from './src/pages/Home'
 import A2_Temperature from './src/pages/A2_Temperature'
 import InitialOptions from './src/pages/InitialOptions'
+import ListPlot from './src/pages/ListPlot'
+import NFT_ListPlot from './src/pages/NFT_ListPlot'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <A2_Temperature />
+      <NFT_ListPlot />
     </View>
   );
 }

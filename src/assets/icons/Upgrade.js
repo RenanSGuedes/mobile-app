@@ -1,11 +1,12 @@
 import * as React from "react"
 import Svg, { G, Path, Circle, Defs, ClipPath } from "react-native-svg"
+import { vw } from 'react-native-expo-viewport-units'
 
 function SvgComponent(props) {
   return (
     <Svg
-      width={100}
-      height={100}
+      width={vw(15)}
+      height={vw(15)}
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

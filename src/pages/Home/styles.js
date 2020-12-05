@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native'
 import { vw } from 'react-native-expo-viewport-units'
-import Constants from 'expo-constants'
 
 const styles = StyleSheet.create({
   container: {
@@ -47,7 +46,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#FAA8A2',
     borderRadius: vw(7/2)
   },
-  pumpStatusIndicator: {
+  pumpStatusIndicatorA: {
+    width: vw(14),
+    height: vw(7),
+    backgroundColor: '#DAEBFF',
+    borderRadius: vw(7/2)
+  },
+  pumpStatusIndicatorB: {
     width: vw(14),
     height: vw(7),
     backgroundColor: '#DAEBFF',

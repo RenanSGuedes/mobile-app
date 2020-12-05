@@ -39,7 +39,7 @@ export default function Home() {
               <Text style={styles.thinText}>Ligado</Text>
             </View>
           </View>
-          <View style={styles.pumpStatusIndicator}/>
+          <View style={styles.pumpStatusIndicatorB}/>
         </View>
 
         <View style={styles.block}>
@@ -53,7 +53,7 @@ export default function Home() {
               <Text style={styles.thinText}>Ligado</Text>
             </View>
           </View>
-          <View style={styles.pumpStatusIndicator}/>
+          <View style={styles.pumpStatusIndicatorA}/>
         </View>
       </View>
 

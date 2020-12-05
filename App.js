@@ -10,7 +10,7 @@ import NFT_ListPlot from './src/pages/NFT_ListPlot'
 export default function App() {
   return (
     <View style={styles.container}>
-      <NFT_ListPlot />
+      <InitialOptions />
     </View>
   );
 }

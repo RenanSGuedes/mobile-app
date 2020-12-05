@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native'
 import { vw } from 'react-native-expo-viewport-units';
 import Constants from 'expo-constants'
+import handlePointer from '../../utils/handlePointer'
 
 const styles = StyleSheet.create({
   container: {
@@ -35,7 +36,13 @@ const styles = StyleSheet.create({
   pointer: {
     position: 'absolute',
     marginTop: 50,
-    transform: [{ rotateZ: `${45}deg` }]
+    transform: [{ rotateZ: `${handlePointer(0, 50, 22)}deg` }]
+  },
+  valueRead: {
+    position: 'absolute',
+    marginTop: 145,
+    fontSize: vw(12),
+    color: '#47566A',
   },
   parametersButtons: {
     flex: .8,

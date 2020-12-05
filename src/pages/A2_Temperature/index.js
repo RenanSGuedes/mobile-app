@@ -9,8 +9,10 @@ import Flow from '../../assets/icons/Flow'
 import Humidity from '../../assets/icons/Humidity'
 import SolutionHeight from '../../assets/icons/SolutionHeight'
 import { vw } from 'react-native-expo-viewport-units'
+import handlePointer from '../../utils/handlePointer'
 
 export default function A2_Temperature() {
+
   return (
     <View style={styles.container}>
 
@@ -23,7 +25,10 @@ export default function A2_Temperature() {
         <View style={styles.pointerBackground}>
           <PointerBackground width={vw(80)} />
         </View>
-        <Pointer style={styles.pointer} width={vw(55)}/>
+        <View style={styles.pointer}>
+          <Pointer width={vw(55)}/>
+        </View>
+        <Text style={styles.valueRead}>{22}°C</Text>
       </View>
 
       <View style={styles.parametersButtons}>

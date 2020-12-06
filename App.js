@@ -23,10 +23,12 @@ import A2_ListPlot from './src/pages/A2_ListPlot' //
 import B2_ListPlot from './src/pages/B2_ListPlot' //
 import NFT_ListPlot from './src/pages/NFT_ListPlot' //
 
+import A2_FlowPlot from './src/pages/A2_FlowPlot'
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <NFT_Level />
+      <A2_FlowPlot />
     </View>
   );
 }

@@ -17,6 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
+    "react-native-chart-kit": "^6.8.0",
     "react-native-color-matrix-image-filters": "^5.2.10",
     "react-native-expo-viewport-units": "^0.0.8",
     "react-native-svg": "12.1.0",

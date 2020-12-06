@@ -3,7 +3,7 @@ import { vw } from 'react-native-expo-viewport-units';
 import Constants from 'expo-constants'
 import handlePointer from '../../utils/handlePointer'
 
-export const currentTemperature = 20
+export const currentTemperature = 25
 
 const styles = StyleSheet.create({
   container: {

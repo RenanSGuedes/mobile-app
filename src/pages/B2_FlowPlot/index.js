@@ -7,14 +7,14 @@ import {
   LineChart,
 } from "react-native-chart-kit";
 
-export default function A2_FlowPlot() {
+export default function B2_FlowPlot() {
   const maxValue = 10
 
   return (
     <View style={styles.container}>
-      <View style={styles.infoMenu}>  
+      <View style={styles.infoMenu}>
 
-        <Text style={styles.titleMenu}>Substrato | Fechado</Text>
+        <Text style={styles.titleMenu}>Substrato | Aberto</Text>
         
         <View style={{
           alignItems: 'center'
@@ -36,7 +36,7 @@ export default function A2_FlowPlot() {
                   ]
                 }
               ],
-              legend: ['Vazão']
+              legend: ['Temperatura']
             }}
             width={vw(90)} // from react-native
             height={vw(55)}

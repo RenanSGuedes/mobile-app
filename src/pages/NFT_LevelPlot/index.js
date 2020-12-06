@@ -7,14 +7,14 @@ import {
   LineChart,
 } from "react-native-chart-kit";
 
-export default function A2_FlowPlot() {
-  const maxValue = 10
+export default function NFT_LevelPlot() {
+  const maxValue = 30
 
   return (
     <View style={styles.container}>
       <View style={styles.infoMenu}>  
 
-        <Text style={styles.titleMenu}>Substrato | Fechado</Text>
+        <Text style={styles.titleMenu}>NFT</Text>
         
         <View style={{
           alignItems: 'center'
@@ -36,11 +36,11 @@ export default function A2_FlowPlot() {
                   ]
                 }
               ],
-              legend: ['Vazão']
+              legend: ['Nível do reservatório']
             }}
             width={vw(90)} // from react-native
             height={vw(55)}
-            yAxisSuffix=" L/h"
+            yAxisSuffix=" cm"
             yAxisInterval={1} // optional, defaults to 1
             chartConfig={{
               backgroundColor: "#DAEBFF",

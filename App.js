@@ -24,11 +24,23 @@ import B2_ListPlot from './src/pages/B2_ListPlot' //
 import NFT_ListPlot from './src/pages/NFT_ListPlot' //
 
 import A2_FlowPlot from './src/pages/A2_FlowPlot'
+import B2_FlowPlot from './src/pages/B2_FlowPlot'
+
+import A2_TemperaturePlot from './src/pages/A2_TemperaturePlot'
+import B2_TemperaturePlot from './src/pages/B2_TemperaturePlot'
+import NFT_TemperaturePlot from './src/pages/NFT_TemperaturePlot'
+
+import A2_LevelPlot from './src/pages/A2_LevelPlot'
+import B2_LevelPlot from './src/pages/B2_LevelPlot'
+import NFT_LevelPlot from './src/pages/NFT_LevelPlot'
+
+import A2_HumidityPlot from './src/pages/A2_HumidityPlot'
+import B2_HumidityPlot from './src/pages/B2_HumidityPlot'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <A2_FlowPlot />
+      <B2_HumidityPlot />
     </View>
   );
 }

@@ -1,9 +1,8 @@
 import { StyleSheet } from 'react-native'
 import { vw } from 'react-native-expo-viewport-units';
 import Constants from 'expo-constants'
-import handlePointer from '../../utils/handlePointer'
 
-export const currentTemperature = 23
+export const currentLevel = 14
 
 const styles = StyleSheet.create({
   container: {
@@ -34,11 +33,6 @@ const styles = StyleSheet.create({
   pointerBackground: {
     position: 'relative',
     alignItems: 'center',
-  },
-  pointer: {
-    position: 'absolute',
-    marginTop: 50,
-    transform: [{ rotateZ: `${handlePointer(0, 40, currentTemperature)}deg` }]
   },
   valueRead: {
     position: 'absolute',

@@ -10,13 +10,13 @@ import SolutionHeight from '../../assets/icons/SolutionHeight'
 import { vw } from 'react-native-expo-viewport-units'
 import { currentFlow } from './styles'
 
-export default function B2_Flow() {
+export default function A2_Flow() {
 
   return (
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <Text style={styles.boldText}>Substrato - Aberto</Text>
+        <Text style={styles.boldText}>Substrato - Fechado</Text>
         <Text style={styles.normalText}>Vazão</Text>
       </View>
       

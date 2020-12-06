@@ -8,16 +8,16 @@ import Flow from '../../assets/icons/Flow'
 import Humidity from '../../assets/icons/Humidity'
 import SolutionHeight from '../../assets/icons/SolutionHeight'
 import { vw } from 'react-native-expo-viewport-units'
-import { currentFlow } from './styles'
+import { currentHumidity } from './styles'
 
-export default function B2_Flow() {
+export default function B2_Humidity() {
 
   return (
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <Text style={styles.boldText}>Substrato - Aberto</Text>
-        <Text style={styles.normalText}>Vazão</Text>
+        <Text style={styles.boldText}>Substrato | Aberto</Text>
+        <Text style={styles.normalText}>Umidade do solo</Text>
       </View>
       
       <View style={styles.pointerContainer}>
@@ -27,7 +27,7 @@ export default function B2_Flow() {
         <View style={styles.pointer}>
           <Pointer width={vw(55)}/>
         </View>
-        <Text style={styles.valueRead}>{currentFlow}L/h</Text>
+        <Text style={styles.valueRead}>{currentHumidity}%</Text>
       </View>
 
       <View style={styles.parametersButtons}>

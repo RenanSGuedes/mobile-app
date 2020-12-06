@@ -3,6 +3,8 @@ import { vw } from 'react-native-expo-viewport-units';
 import Constants from 'expo-constants'
 import handlePointer from '../../utils/handlePointer'
 
+export const currentFlow = 7
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
   pointer: {
     position: 'absolute',
     marginTop: 50,
-    transform: [{ rotateZ: `${handlePointer(0, 50, 22)}deg` }]
+    transform: [{ rotateZ: `${handlePointer(0, 10, currentFlow)}deg` }]
   },
   valueRead: {
     position: 'absolute',

@@ -1,33 +1,29 @@
 import * as React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import styles from './styles'
-import XPointerBackground from '../../assets/svg_components/XPointerBackground'
-import Pointer from '../../assets/svg_components/Pointer'
+import YPointerBackground from '../../assets/svg_components/YPointerBackground'
 import Temperature from '../../assets/icons/Temperature'
 import Flow from '../../assets/icons/Flow'
 import Humidity from '../../assets/icons/Humidity'
 import SolutionHeight from '../../assets/icons/SolutionHeight'
 import { vw } from 'react-native-expo-viewport-units'
-import { currentFlow } from './styles'
+import { currentLevel } from './styles'
 
-export default function B2_Flow() {
+export default function B2_Level() {
 
   return (
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <Text style={styles.boldText}>Substrato - Aberto</Text>
-        <Text style={styles.normalText}>Vazão</Text>
+        <Text style={styles.boldText}>Substrato | Aberto</Text>
+        <Text style={styles.normalText}>Nível da solução no reservatório</Text>
       </View>
       
       <View style={styles.pointerContainer}>
         <View style={styles.pointerBackground}>
-          <XPointerBackground width={vw(80)} />
+          <YPointerBackground width={vw(80)} />
         </View>
-        <View style={styles.pointer}>
-          <Pointer width={vw(55)}/>
-        </View>
-        <Text style={styles.valueRead}>{currentFlow}L/h</Text>
+        <Text style={styles.valueRead}>{currentLevel}cm</Text>
       </View>
 
       <View style={styles.parametersButtons}>

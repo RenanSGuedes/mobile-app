@@ -10,7 +10,7 @@ import SolutionHeight from '../../assets/icons/SolutionHeight'
 import { vw } from 'react-native-expo-viewport-units'
 import { currentFlow } from './styles'
 
-export default function B2_Flow() {
+export default function A2_Flow() {
 
   return (
     <View style={styles.container}>

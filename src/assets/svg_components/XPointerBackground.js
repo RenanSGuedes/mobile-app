@@ -1,42 +1,34 @@
 import * as React from "react"
-import Svg, {
-  G,
-  Circle,
-  Path,
-  Defs,
-  LinearGradient,
-  Stop,
-} from "react-native-svg"
-/* SVGR has dropped some elements not supported by react-native-svg: filter */
+import Svg, { Rect, Path, Defs, LinearGradient, Stop } from "react-native-svg"
 
 function SvgComponent(props) {
   return (
-    <Svg
-      width={354}
-      height={354}
-      viewBox="0 0 354 354"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <G filter="url(#prefix__filter0_d)">
-        <Circle cx={177} cy={175} r={174} fill="#F0F0F0" />
-      </G>
+    <Svg width={348} height={348} viewBox="0 0 348 348" fill="none" {...props}>
+      <Rect width={348} height={348} rx={174} fill="#F0F0F0" />
+      <Rect
+        x={0.5}
+        y={0.5}
+        width={347}
+        height={347}
+        rx={173.5}
+        stroke="#000"
+        strokeOpacity={0.25}
+      />
       <Path
-        d="M284.773 281.773a151.004 151.004 0 0032.733-164.558 151 151 0 10-246.28 164.558L178 175l106.773 106.773z"
-        fill="url(#prefix__paint0_linear)"
+        d="M280.773 280.773a151.004 151.004 0 0032.733-164.558 151 151 0 10-246.28 164.558L174 174l106.773 106.773z"
+        fill="url(#paint0_linear)"
       />
       <Defs>
         <LinearGradient
-          id="prefix__paint0_linear"
-          x1={20.5}
-          y1={175}
-          x2={329}
-          y2={175}
+          id="paint0_linear"
+          x1={16.5}
+          y1={174}
+          x2={325}
+          y2={174}
           gradientUnits="userSpaceOnUse"
         >
           <Stop stopColor="#C4C4C4" />
-          <Stop offset={0.786} stopColor="#DAEBFF" />
+          <Stop offset={0.786458} stopColor="#DAEBFF" />
         </LinearGradient>
       </Defs>
     </Svg>
